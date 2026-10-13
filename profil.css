@@ -1,0 +1,155 @@
+/* Mengatur seluruh halaman */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f0f2fa;
+    font-family: Arial, sans-serif;
+    color: #334155;
+}
+
+/* Kartu profil */
+.kartu {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+
+    border: 3px solid #a5b4fc;
+    border-radius: 25px;
+
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.12);
+}
+
+/* Foto profil */
+.foto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #a5b4fc;
+
+    margin-bottom: 20px;
+}
+
+/* Judul nama */
+#nama {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #243b80;
+
+    margin: 10px 0;
+}
+
+/* Garis dekorasi */
+.garis {
+    width: 70px;
+    height: 5px;
+    background-color: #7189e8;
+
+    border-radius: 10px;
+    margin: 20px auto 30px;
+}
+
+/* Informasi diri */
+.informasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: left;
+    margin: 15px 0;
+    padding: 10px 15px;
+
+    background-color: #f8f9ff;
+    border-radius: 10px;
+}
+
+/* Label informasi */
+.label {
+    font-weight: bold;
+    color: #5872c5;
+    margin: 0;
+}
+
+/* Isi informasi */
+.isi {
+    color: #334155;
+    margin: 0;
+}
+
+/* Garis pembatas */
+.pembatas {
+    height: 2px;
+    background-color: #dbe3ff;
+    margin: 30px 0;
+}
+
+/* Bagian tentang saya */
+.deskripsi {
+    background-color: #f0f3ff;
+
+    padding: 20px;
+    margin-top: 20px;
+
+    border-radius: 15px;
+    text-align: left;
+}
+
+/* Judul tentang saya */
+.deskripsi h2 {
+    font-family: Georgia, serif;
+    color: #4059a8;
+    font-size: 23px;
+
+    margin-top: 0;
+}
+
+/* Paragraf deskripsi */
+.deskripsi p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #475569;
+
+    margin-bottom: 0;
+}
+
+/* Tulisan penutup */
+.penutup {
+    font-size: 13px;
+    color: #718096;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/* Tampilan pada layar kecil */
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .kartu {
+        padding: 25px 20px;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    #nama {
+        font-size: 28px;
+    }
+
+    .informasi {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
